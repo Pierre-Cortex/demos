@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison de bourg à rénover — 16 rue de la Treille, Beaumont (63)</title>
+<style>
+  :root{
+    --ink:#14110f; --ink2:#1f1a16; --paper:#f5f0e7; --paper2:#ebe3d4;
+    --gold:#b0894a; --gold2:#cda866; --line:#dccfba; --muted:#6d6357; --green:#3f6b4f;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12}
+  a{color:var(--gold)}
+  /* HERO */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;
+    background:linear-gradient(180deg,rgba(10,8,6,.15) 0%,rgba(10,8,6,.30) 45%,rgba(10,8,6,.85) 100%),url('assets/1-facade-jardin.png');
+    background-size:cover;background-position:center 35%;border-bottom:3px solid var(--gold)}
+  .hero .wrap{padding-bottom:48px;padding-top:40px}
+  .tagline{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);margin-bottom:16px}
+  .hero h1{font-size:52px;color:#fff;max-width:760px;line-height:1.04}
+  .hero .loc{font-family:var(--serif);font-size:21px;color:#eadfce;font-style:italic;margin-top:12px}
+  .heroline{display:flex;flex-wrap:wrap;gap:30px;margin-top:28px;border-top:1px solid rgba(255,255,255,.2);padding-top:22px}
+  .heroline .s .n{font-family:var(--serif);font-size:27px;color:var(--gold2)}
+  .heroline .s .l{font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#cfc3b0;margin-top:2px}
+  /* SECTIONS */
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+  h2{font-size:31px;margin-bottom:10px}
+  .lead{font-size:17px;color:#403a33;max-width:780px;margin-bottom:8px}
+  p{margin-bottom:11px}
+  .small{font-size:13px;color:var(--muted)}
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+  .duo{background:#1a1512;border-radius:10px;overflow:hidden;border:1px solid #34291d}
+  .duo .imgs{display:grid;grid-template-columns:1fr 1fr}
+  .duo .b{position:relative}
+  .duo img{width:100%;height:230px;object-fit:cover;display:block}
+  .duo .b span{position:absolute;top:8px;left:8px;font-size:9.5px;letter-spacing:1px;padding:3px 7px;border-radius:3px}
+  .b-av span{background:rgba(0,0,0,.72);color:#cfc6b6}.b-ap span{background:var(--gold);color:#fff}
+  .duo .cap{padding:10px 14px;font-family:var(--serif);font-size:15px;color:#e6dcc8}
+  /* levels */
+  .levels{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+  .lvl{background:#fff;border:1px solid var(--line);border-radius:9px;padding:18px 18px;text-align:center}
+  .lvl .m2{font-family:var(--serif);font-size:30px;color:var(--gold)}
+  .lvl .t{font-size:13px;font-weight:600;margin:4px 0 5px}
+  .lvl .d{font-size:12px;color:var(--muted)}
+  .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;margin-top:22px;max-width:820px}
+  .feat{display:flex;gap:10px;font-size:14.5px;align-items:baseline}
+  .feat .k{color:var(--gold);font-size:16px}
+  /* image full */
+  .imgfull{width:100%;border:1px solid var(--line);border-radius:10px;margin-top:18px;display:block}
+  /* location */
+  .loc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;max-width:760px}
+  .loc-grid .p{background:var(--paper2);border-radius:6px;padding:11px 14px;font-size:14px}
+  .loc-grid .p b{color:var(--ink)}
+  /* invest band */
+  .band{background:var(--ink2);color:var(--paper);border-radius:12px;padding:34px 36px;margin-top:8px}
+  .band h3{color:#fff;font-size:23px;margin-bottom:10px}
+  .band p{color:#cfc6b6;font-size:15.5px}
+  .band .pts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  .band .pt .h{color:var(--gold2);font-family:var(--serif);font-size:16px;margin-bottom:4px}
+  .band .pt .b{font-size:13px;color:#bdb3a3}
+  /* annonce box */
+  .annonce{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:9px;padding:22px 24px;margin-top:18px;font-size:14.5px}
+  .annonce h4{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  /* contact */
+  .contact{text-align:center;padding:58px 0}
+  .contact .price{font-family:var(--serif);font-size:34px;color:var(--gold);margin-bottom:6px}
+  .contact h2{font-size:34px}
+  .cta{display:inline-block;margin-top:18px;background:var(--ink);color:#fff;font-size:15px;letter-spacing:.5px;padding:14px 30px;border-radius:6px;text-decoration:none}
+  footer{background:var(--ink);color:#8d8475;font-size:12px;padding:26px 0;text-align:center}
+  @media(max-width:760px){.hero h1{font-size:34px}.gal,.levels,.band .pts,.loc-grid,.feats{grid-template-columns:1fr}.duo img{height:200px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tagline">À vendre · Direct propriétaire · Idéal investisseur</div>
+    <h1>Maison de bourg à rénover, cœur de village médiéval</h1>
+    <div class="loc">16 rue de la Treille — Beaumont (63110), Clermont Métropole</div>
+    <div class="heroline">
+      <div class="s"><div class="n">95 m²</div><div class="l">habitables · 4 niveaux</div></div>
+      <div class="s"><div class="n">138 m²</div><div class="l">de parcelle · avec jardin</div></div>
+      <div class="s"><div class="n">2 accès</div><div class="l">rue de la Treille / Pl. Victor Hugo</div></div>
+      <div class="s"><div class="n">10 min</div><div class="l">de Clermont-Ferrand</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- POTENTIEL -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Le potentiel</div>
+    <h2>Aujourd'hui une maison à révéler. Demain, ceci.</h2>
+    <p class="lead">Le bien est à rénover intégralement — c'est tout l'intérêt pour un investisseur. Voici une projection du résultat, à partir de l'état actuel : pierre apparente, escalier en vis, jardin paysagé.</p>
+    <div class="gal">
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-1.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/1-facade-jardin.png"><span>POTENTIEL</span></div></div><div class="cap">Façade Sud &amp; jardin</div></div>
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-3.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/3-escalier-vis.png"><span>POTENTIEL</span></div></div><div class="cap">Escalier en vis en pierre</div></div>
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-4.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/4-chambre.png"><span>POTENTIEL</span></div></div><div class="cap">Chambre sous combles</div></div>
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-2.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/2-facade-rue.png"><span>POTENTIEL</span></div></div><div class="cap">Façade sur ruelle</div></div>
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-5.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/5-porte-16.png"><span>POTENTIEL</span></div></div><div class="cap">Entrée &amp; niche gothique</div></div>
+      <div class="duo"><div class="imgs"><div class="b b-av"><img src="assets/before-6.png"><span>AUJOURD'HUI</span></div><div class="b b-ap"><img src="assets/6-angle-rue.png"><span>POTENTIEL</span></div></div><div class="cap">Vue d'angle sur la ruelle</div></div>
+    </div>
+    <p class="small" style="margin-top:12px">Projections — vues d'artiste non contractuelles, générées à partir des photos du bien. À adapter selon le projet de rénovation.</p>
+  </div>
+</section>
+
+<!-- LE BIEN -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Le bien</div>
+    <h2>4 niveaux, du sous-sol voûté aux combles</h2>
+    <div class="levels">
+      <div class="lvl"><div class="m2">19 m²</div><div class="t">Sous-sol</div><div class="d">Garage + cave voûtée en pierre</div></div>
+      <div class="lvl"><div class="m2">33 m²</div><div class="t">Rez-de-chaussée</div><div class="d">Cuisine, véranda, escalier en vis</div></div>
+      <div class="lvl"><div class="m2">27 m²</div><div class="t">1ᵉʳ étage</div><div class="d">Chambre, balcon façade Est</div></div>
+      <div class="lvl"><div class="m2">15 m²</div><div class="t">2ᵉ étage</div><div class="d">Combles à aménager</div></div>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="k">◆</span><div><b>Cave voûtée en pierre</b> — cachet d'origine, idéale cave à vin</div></div>
+      <div class="feat"><span class="k">◆</span><div><b>Escalier en vis en pierre</b> — pièce maîtresse patrimoniale</div></div>
+      <div class="feat"><span class="k">◆</span><div><b>Jardin</b> — rare en centre ancien</div></div>
+      <div class="feat"><span class="k">◆</span><div><b>Double accès</b> par 2 rues (de la Treille / Pl. Victor Hugo)</div></div>
+      <div class="feat"><span class="k">◆</span><div><b>Véranda</b> au rez-de-chaussée</div></div>
+      <div class="feat"><span class="k">◆</span><div><b>Balcon</b> en façade Est, 1ᵉʳ étage</div></div>
+    </div>
+    <img class="imgfull" src="assets/etat-des-lieux.png" alt="État des lieux — planche photographique">
+    <p class="small">État des lieux (dossier de plans, architecte ACA). Rénovation intégrale à prévoir.</p>
+  </div>
+</section>
+
+<!-- EMPLACEMENT -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">L'emplacement</div>
+    <h2>Beaumont, village médiéval aux portes de Clermont</h2>
+    <p class="lead">Centre ancien, à deux pas de la place St-Benoît et de l'abbaye bénédictine du XIIᵉ siècle. Un secteur patrimonial recherché, dans l'agglomération clermontoise (300 000 habitants).</p>
+    <div class="loc-grid">
+      <div class="p"><b>Clermont-Ferrand</b> — 10 min, agglomération 300 000 hab.</div>
+      <div class="p"><b>CHU Gabriel-Montpied</b> — 7 min, demande locative soutenue</div>
+      <div class="p"><b>Facultés &amp; étudiants</b> — 40 000 étudiants à proximité</div>
+      <div class="p"><b>A75 &amp; gare</b> — Paris 3h30, Lyon 2h</div>
+    </div>
+    <img class="imgfull" src="assets/situation-cadastre.png" alt="Plan de situation et cadastre — parcelle BS 229">
+    <p class="small">Parcelle cadastrale 000 BS 229 · contenance 138 m². Plan de situation, vue aérienne et cadastre.</p>
+  </div>
+</section>
+
+<!-- INVESTISSEUR -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Pour l'investisseur</div>
+    <h2>Pourquoi ce bien</h2>
+    <div class="band">
+      <h3>Une opération à valeur ajoutée, dans un secteur rare</h3>
+      <p>Maison à rénover entièrement = marge de création de valeur pour un investisseur ou un marchand de biens. Volumes, pierre, jardin et double accès offrent plusieurs scénarios (résidence, locatif longue durée, location courte durée près du CHU).</p>
+      <div class="pts">
+        <div class="pt"><div class="h">À rénover entièrement</div><div class="b">Vous maîtrisez le projet et la marge, pas de surcoût caché de « déjà fait ».</div></div>
+        <div class="pt"><div class="h">Secteur patrimonial</div><div class="b">Centre ancien classé, proximité abbaye XIIᵉ — emplacement non reproductible.</div></div>
+        <div class="pt"><div class="h">Potentiel défiscalisation</div><div class="b">Secteur Monuments Historiques à proximité immédiate — éligibilité à vérifier selon le projet.</div></div>
+      </div>
+    </div>
+
+    <div class="annonce">
+      <h4>Texte d'annonce — prêt à diffuser</h4>
+      <p><b>Maison de bourg à rénover — 16 rue de la Treille, Beaumont (63110).</b> Idéal investisseurs / marchands de biens. Maison de village sur 4 niveaux, ~95 m² habitables, parcelle de 138 m² avec jardin, double accès par 2 rues. Cœur du centre ancien médiéval, à 10 min de Clermont-Ferrand (CHU 7 min, facultés). Sous-sol 19 m² (garage + cave voûtée), RDC 33 m² (cuisine, véranda, escalier en vis en pierre), 1ᵉʳ 27 m² (chambre, balcon), combles 15 m². Rénovation intégrale à prévoir, beau potentiel. Dossier de plans et projections « après travaux » sur demande. Direct propriétaire. À visiter rapidement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center">À saisir</div>
+    <div class="price">Prix sur demande</div>
+    <h2>Direct propriétaire — à visiter rapidement</h2>
+    <p class="small" style="max-width:520px;margin:8px auto 0">Dossier complet (plans architecte, projections, diagnostics) transmis sur simple demande.</p>
+    <a class="cta" href="mailto:VOTRE-EMAIL?subject=Maison%2016%20rue%20de%20la%20Treille%20Beaumont">Demander le dossier</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">16 rue de la Treille — Beaumont (63110) · Parcelle BS 229 · Direct propriétaire · Projections : vues d'artiste non contractuelles.</div>
+</footer>
+
+</body>
+</html>

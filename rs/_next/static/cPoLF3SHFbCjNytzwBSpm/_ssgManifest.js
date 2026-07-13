@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Flots\u002F[slug]","\u002Flots\u002F[slug]\u002Fdossier"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

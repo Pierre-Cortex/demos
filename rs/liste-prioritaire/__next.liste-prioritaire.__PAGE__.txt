@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[16520,["/demos/rs/_next/static/chunks/3iiz4iv0br0ia.js","/demos/rs/_next/static/chunks/1h9h3xsaki20e.js","/demos/rs/_next/static/chunks/1vnzqdmbsm0wp.js"],"QuestionnaireListe"]
+3:I[12012,["/demos/rs/_next/static/chunks/3iiz4iv0br0ia.js","/demos/rs/_next/static/chunks/1h9h3xsaki20e.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"className":"mx-auto max-w-3xl px-6 pb-24 pt-16","children":[["$","div",null,{"className":"eyebrow","children":"Liste prioritaire"}],["$","h1",null,{"className":"font-display mt-3 text-4xl font-semibold leading-tight sm:text-5xl","children":"Les bonnes affaires partent avant les annonces"}],["$","p",null,{"className":"mt-4 max-w-xl text-[15.5px] text-muted","children":"Sur notre dernière opération, 7 lots sur 9 ont trouvé preneur avant la fin des travaux — la plupart auprès de personnes qui nous connaissaient déjà. Quatre questions pour que nous ne vous proposions que ce qui vous correspond."}],["$","div",null,{"className":"mt-10","children":["$","$L2",null,{}]}]]}],[["$","script","script-0",{"src":"/demos/rs/_next/static/chunks/1vnzqdmbsm0wp.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"cPoLF3SHFbCjNytzwBSpm"}
+5:null
