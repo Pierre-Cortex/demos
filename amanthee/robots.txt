@@ -1,5 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /mentions-legales
-
-Sitemap: https://amanthee-patrimoine.fr/sitemap.xml
